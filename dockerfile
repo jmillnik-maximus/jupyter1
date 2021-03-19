@@ -30,6 +30,3 @@ RUN chmod +x /usr/bin/tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
-
-# docker build -t jmillnik/jupyter1 .
-# docker run -p 8888:8888 -p 8999:8999 jmillnik/jupyter1
